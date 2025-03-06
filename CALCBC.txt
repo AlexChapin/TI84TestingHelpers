@@ -1,0 +1,341 @@
+Lbl 1
+ClrHome
+Disp "Parametric:"
+Disp "Derivative"
+Disp "dy/dx = (dy/dt) / (dx/dt)"
+Disp "Double Derivative"
+Disp "d2/dx2 = d/dt(dy/dt)"
+Disp "         ___________"
+Disp "           (dx/dt)"
+
+Lbl 2
+getKey→A
+If A=34
+Goto 3
+If A=21
+Goto 99
+If A≠34
+Goto 2
+
+Lbl 3
+ClrHome
+Disp "Area:"
+Disp "Y(t) (dx/dt)"
+Disp "Volume:"
+Disp "π(Y(t))^2 (dx/dt)"
+Disp "Arc Length"
+Disp "√((dy/dt)^2 + (dy/dt)^2)"
+Disp "Surface Area
+Disp "2π * ∫(Y(t)*Arc Length)"
+
+Lbl 4
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 1
+If A=34
+Goto 5
+
+
+If A≠34
+Goto 4
+
+
+Lbl 5
+ClrHome
+Disp "sin(2X) = 2sin(x)cos(x)
+Disp "cos(x)^2 = .5(1+cos(2x))
+Disp "sin(x)^2 = .5(1-cos(2x))
+Disp "Trig Subs"
+Disp "(x-a) = sin"
+Disp "(x+a) = tan"
+Disp "(a-x) = sec"
+Disp "Remember dx!!!" 
+
+Lbl 6
+getKey→A
+If A=21
+Goto 99
+If A=34
+Goto 7
+If A=25
+Goto 3
+If A≠25
+Goto 6
+Lbl 7
+ClrHome
+Disp "Polar Functions:"
+Disp "Area:
+Disp ".5 ∫(r(θ)^2)
+Disp "Arc Length:
+Disp "∫(√((r')^2+r^2))
+
+Lbl 8
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 5
+If A=34
+Goto 9
+If A≠34
+Goto 8
+Lbl 9
+ClrHome
+Disp "Polar Things to Remember:"
+Disp "R^2 = x^2 + y^2
+Disp "x = r cos(θ)
+Disp "y = r sin(θ)
+Disp "x^2 + y+2 = a^2, Circle
+Disp "Sec (x=1), Csc (y=1)"
+
+Lbl 10
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 7
+If A=34
+Goto 11
+If A≠34
+Goto 10
+Lbl 11
+ClrHome:
+Disp "Shell Method:"
+Disp "V = 2π ∫(r(x)h(x)dx)"
+Disp "Arc Length (Normal):"
+Disp "L = ∫(√(1+(dy/dx)^2))"
+Disp "Surface Area:
+Disp "2π ∫(f(x)*√(1+f'(x)))"
+
+Lbl 12
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 9
+If A=34
+Goto 13
+If A≠34
+Goto 12
+Lbl 13
+ClrHome
+Disp "Integration:"
+Disp "∫(u*v') = [u*v]-∫(u'v)"
+Disp "√(a^2 - x^2) = a*sin(θ)
+Disp "√(a^2 + x^2) = a*tan(θ)
+Disp "√(-a^2 + x^2) = a*sec(θ)
+Disp "Part Fractions: 
+Disp "(Bx+C)/(x^2+4)
+
+Lbl 14
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 11
+If A=34
+Goto 15
+If A≠34
+Goto 14
+Lbl 15
+ClrHome
+Disp "Diff Eq: dP/dt = KP(L-P)"
+Disp "L = Carrying Capacity"
+Disp "Exponential Growth"
+Disp "dy/dt = k * y = y Ce^kt"
+Disp "1st Order Diff Eq"
+Disp "dy/dx + P(x)*y = Q(x)"
+Disp "e^(∫(P(x)dx)) int factor"
+Lbl 16
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 13
+If A=34
+Goto 17
+If A≠34
+Goto 16
+Lbl 17
+ClrHome
+Disp "Then:
+Disp "d/dx[∫e^(∫(P(x))) * Q(x)
+Disp "--------------------------"
+Disp "    e^(∫(P(x)))
+
+Lbl 18
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 15
+If A=34
+Goto 19
+If A≠34
+Goto 18
+
+Lbl 19
+ClrHome
+Disp "Geometric Series:"
+Disp "Σ(a*r^n), If r<1 Then"
+Disp "Converges to a/(1-r)"
+Disp " "
+Disp "Telescope Series:"
+Disp "Decompose to"
+Disp "1/(x) - 1/(x+2)"
+Disp "Then 1/x + 1/x+1 remains"
+Disp "Solve"
+
+Lbl 20
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 17
+If A=34
+Goto 21
+If A≠34
+Goto 20
+
+Lbl 21
+ClrHome
+Disp "Nth Term"
+Disp "Sub Infinity if An ≠ 0"
+Disp "Series Diverges"
+Disp "p-Series = Σ1/n^p
+Disp "If P>1 Conv"
+Disp "Else P≤1 Div"
+Lbl 22
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 19
+If A=34
+Goto 23
+If A≠34
+Goto 22
+
+Lbl 23
+ClrHome
+Disp "Alternating Series"
+Disp "Σ(-1)^(n-1)"
+Disp "a(n+1) ≤ a(n)"
+Disp "Passes Nth Term Test"
+Disp "Then Conv"
+Disp "Rem = Remainder"
+Disp "abs(Rem) ≤ a(N+1)"
+Lbl 24
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 21
+If A=34
+Goto 25
+If A≠34
+Goto 24
+
+Lbl 25
+ClrHome
+Disp "Integral Test"
+Disp "If f is continuous, +"
+Disp "and decreasing, then"
+Disp "∫f(x) from 1 to infinity"
+Disp "If div then div"
+Disp "If conv then conv"
+Disp "Error 0 < R(n) < 
+Disp "∫(n to inf)
+Lbl 26
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 23
+If A=34
+Goto 27
+If A≠34
+Goto 26
+
+Lbl 27
+ClrHome
+Disp "Root Test:"
+Disp "Σa(n) Take Lim of"
+Disp "nthroot(abs(a(n))"
+Disp "If result is < 1 conv"
+Disp "If > 1 div"
+Disp "If = 1 inconclusive"
+Lbl 28
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 25
+If A=34
+Goto 29
+If A≠34
+Goto 28
+
+Lbl 29
+ClrHome
+Disp "Ratio Test:"
+Disp "lim(n to infinity)of"
+Disp "a(n+1) / a(n) = L"
+Disp "If L < 1 conv"
+Disp "If L > 1 conv"
+Disp "If L = 1 inconclusive"
+Lbl 30
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 27
+If A=34
+Goto 31
+If A≠34
+Goto 30
+
+Lbl 31
+ClrHome
+Disp "Direct Comp"
+Disp "0 ≤ a(n) ≤ b(n)"
+Disp "And b(n) conv"
+Disp "Then a(n) conv"
+Disp "0 ≤ b(n) ≤ a(n)"
+Disp "And b(n) div"
+Disp "Then a(n) div"
+Lbl 32
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 29
+If A=34
+Goto 33
+If A≠34
+Goto 32
+
+Lbl 33
+ClrHome
+Disp "Limit Comp:"
+Disp "lim(n to infinity) of"
+Disp "a(n)/b(n) = L"
+Disp "L>0 and b(n) conv"
+Disp "Then a(n) conv"
+Disp "a(n)/b(n) = L"
+Disp "and b(n) div"
+Disp "then a(n) div"
+Lbl 34
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 31
+If A=34
+Goto 99
+If A≠34
+Goto 34
+
+Lbl 99
