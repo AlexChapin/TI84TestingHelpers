@@ -1,0 +1,145 @@
+Lbl 1
+ClrHome
+Disp "TOTAL ENERGY OF ORBIT"
+Disp "ET=(⁻G M1 M2)⁄(2R)
+Disp "KEP LAW3 T^2(PROP)R^3"
+Disp "CONSTANT: (4π^2)/(GM)
+
+Disp "MASS IS PLANET"
+Disp "SPRING K=MW^2"
+
+Disp "PARALEL AXIS THM"
+Disp "I=IC+MH^2"
+Disp "IC=I COM"
+Disp "H=DISTANCE BETWEEN AXIES"
+Lbl 2
+getKey→A
+If A=34
+Goto 3
+If A=21
+Goto 99
+If A≠34
+Goto 2
+
+Lbl 3
+ClrHome
+Disp "MOMENTS OF INERTIA"
+Disp "HOOP (CENTRAL):I=MR^2
+Disp "SOLID CYLINDER:I=.5MR^2
+Disp "ROD (END):     I=(1/3)MR^2
+Disp "ROD (CENTER): I=(1/12)MR^2
+Disp "SPHERE (SOLID):I=(2/5)MR^2"
+Disp "SPHERE(HOLLOW):I=(2/3)MR^2"
+Disp "RING (CENTRAL): WITH R1 R2"
+Disp "I=.5M(R1^2+R2^2)
+Lbl 4
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 1
+If A=34
+Goto 5
+
+
+If A≠34
+Goto 4
+
+
+Lbl 5
+ClrHome
+Disp "ESCAPE VELOCITY:"
+Disp "√((2GM)/(R))"
+Disp "MASS OF EARTH RADIUS OF E"
+
+Disp "USE DV/DT AS A AND DX/DT"
+Disp "AS V"
+Disp ""
+Disp "T(TORSION)=2π√(I/K)"
+Disp "K IS TORSION CONSTANT"
+Disp "DM=LAMBDA(DX)
+Lbl 6
+getKey→A
+If A=21
+Goto 99
+If A=34
+Goto 7
+If A=25
+Goto 3
+If A≠25
+Goto 6
+Lbl 7
+ClrHome
+Disp "ROLLING WO SLIPPING"
+Disp "VCM=RW"
+Disp "VTOP=2VCM"
+Disp "VBOTTOM=0"
+Disp "ETOT=KROTATE+KTRANSLATION"
+Disp "GPE IS = ETOTAL"
+Disp "IW^2=(INUMBER)*.5*VF^2+M"
+Disp "M WILL LATER CANCEL"
+Lbl 8
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 5
+If A=34
+Goto 9
+If A≠34
+Goto 8
+Lbl 9
+ClrHome
+Disp "UNITS:"
+Disp "IMPULSE:NS OR KG*M/S"
+Disp "MOMENTS OF INERTIA:KG*M^2"
+Disp "MOMENTUM:KGM/S"
+Disp "POWER:WATTS"
+Disp "TORQUE:N*M"
+Disp "|w:RADIANS/SEC"
+Lbl 10
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 7
+If A=34
+Goto 11
+If A≠34
+Goto 10
+Lbl 11
+ClrHome:Disp "DISK:"
+Disp "DM=(ROE(P))*2πR(DR)"
+Disp "SQUARE:"
+Disp "DM=(ROE)*H*T"
+Disp "SPHERE:"
+Disp "DM=(ROE)*4π^2"
+Lbl 12
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 9
+If A=34
+Goto 13
+If A≠34
+Goto 12
+Lbl 13
+ClrHome
+Disp "SOLVE FOR V IN ORBIT"
+Disp "FG=MA"
+Disp "(GM1M2)/R^2=(MV^2)/R"
+Disp "G(MPLANET)/R=MV^2"
+Disp "V^2=(G(M))/R"
+Lbl 14
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 9
+If A=34
+Goto 99
+If A≠34
+Goto 14
+
+Lbl 99

@@ -1,0 +1,120 @@
+Lbl 1
+ClrHome
+Disp "Capacitors:"
+Disp "Cylindrical Cap: "
+Disp "2πε (L)/(Ln(b/a)"
+Disp "B = Outer, A = Inner"
+Disp "Spherical Cap:"
+Disp "4πε (ab/(b-a))"
+Disp "B = Outer, A = Inner"
+Lbl 2
+getKey→A
+If A=34
+Goto 3
+If A=21
+Goto 99
+If A≠34
+Goto 2
+
+Lbl 3
+ClrHome
+Disp "Isolated Plate:"
+Disp "4πεR
+Disp "Series: Q Shared"
+Disp "1/Ctotal = 1/C1 + 1/C2"
+Disp "Parallel: V Shared"
+Disp "Ctotal = C1 + C2 + C3"
+Lbl 4
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 1
+If A=34
+Goto 5
+
+
+If A≠34
+Goto 4
+
+
+Lbl 5
+ClrHome
+Disp "Dielectrics:"
+Disp "Adding k Increases C"
+Disp "Isolated: Decreases V"
+Disp "Uf = Ui/k"
+Disp "E = (q-q')/(εkA)"
+Disp "E = Ei/k"
+Lbl 6
+getKey→A
+If A=21
+Goto 99
+If A=34
+Goto 7
+If A=25
+Goto 3
+If A≠25
+Goto 6
+Lbl 7
+ClrHome
+Disp "B Field"
+Disp "Due to Long Wire:
+Disp "μI/2πr"
+Disp "Due to Short Wire:"
+Disp "μI(sin(θ2)-sin(θ1))/4π"
+Disp "Due to Full Loop"
+Disp "μI/2r"
+Disp "At Middle"
+Lbl 8
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 5
+If A=34
+Goto 9
+If A≠34
+Goto 8
+Lbl 9
+ClrHome
+Disp "Due to Partial Loop"
+Disp "μI(θ)/4πr"
+Lbl 10
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 7
+If A=34
+Goto 11
+If A≠34
+Goto 10
+Lbl 11
+ClrHome:
+Disp "2nd To Exit"
+Lbl 12
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 9
+If A=34
+Goto 13
+If A≠34
+Goto 12
+Lbl 13
+ClrHome
+Disp "2nd To Exit"
+Lbl 14
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 9
+If A=34
+Goto 99
+If A≠34
+Goto 14
+
+Lbl 99
