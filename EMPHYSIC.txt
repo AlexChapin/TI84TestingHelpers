@@ -63,9 +63,10 @@ Disp "Due to Long Wire:
 Disp "μI/2πr"
 Disp "Due to Short Wire:"
 Disp "μI(sin(θ2)-sin(θ1))/4π"
-Disp "Due to Full Loop"
+Disp "Due to Full Loop: (Center)"
 Disp "μI/2r"
-Disp "At Middle"
+Disp "Due to Partial Loop:"
+Disp "μI(θ)/4πr"
 Lbl 8
 getKey→A
 If A=21
@@ -78,8 +79,6 @@ If A≠34
 Goto 8
 Lbl 9
 ClrHome
-Disp "Due to Partial Loop"
-Disp "μI(θ)/4πr"
 Lbl 10
 getKey→A
 If A=21
