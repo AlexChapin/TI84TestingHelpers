@@ -68,8 +68,10 @@ ClrHome
 Disp "Polar Functions:"
 Disp "Area:
 Disp ".5 ∫(r(θ)^2)
-Disp "Arc Length:
-Disp "∫(√((r')^2+r^2))
+Disp "dy/dx ="
+Disp "f'(θ)sin(θ) + f(θ)cos(θ)"
+Disp "------------------------"
+Disp "f'(θ)cos(θ) - f(θ)sin(θ)"
 
 Lbl 8
 getKey→A
@@ -83,6 +85,8 @@ If A≠34
 Goto 8
 Lbl 9
 ClrHome
+Disp "Arc Length:
+Disp "∫(√((r')^2+r^2))
 Disp "Polar Things to Remember:"
 Disp "R^2 = x^2 + y^2
 Disp "x = r cos(θ)
