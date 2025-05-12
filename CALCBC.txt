@@ -73,6 +73,7 @@ Disp "f'(θ)sin(θ) + f(θ)cos(θ)"
 Disp "------------------------"
 Disp "f'(θ)cos(θ) - f(θ)sin(θ)"
 
+
 Lbl 8
 getKey→A
 If A=21
@@ -126,7 +127,7 @@ Goto 12
 Lbl 13
 ClrHome
 Disp "Integration:"
-Disp "∫(u*v') = [u*v]-∫(u'v)"
+Disp "∫(udv) = uv - ∫(vdu)"
 Disp "√(a^2 - x^2) = a*sin(θ)
 Disp "√(a^2 + x^2) = a*tan(θ)
 Disp "√(-a^2 + x^2) = a*sec(θ)
@@ -338,8 +339,66 @@ Goto 99
 If A=25
 Goto 31
 If A=34
-Goto 99
+Goto 35
 If A≠34
 Goto 34
+
+Lbl 35
+ClrHome
+Disp "Random Stuff:"
+Disp "d/dx(sin^-1) = u'/√(1-u^2)"
+Disp "d/dx(cos^-1) = -u'/"
+Disp "√(1-u^2)"
+Disp "d/dx(tan^-1) = u'/(1+u^2)"
+Lbl 36
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 33
+If A=34
+Goto 37
+If A≠34
+Goto 36
+
+Lbl 37
+ClrHome
+Disp "d/dx(loga(u))= u'/(ln(a)u)"
+Disp "d/dx(a^u)= ln(a)(a^u)(u')"
+Disp "Power Series:"
+Disp "1/x = Σ(-1)^n(x-1)^n"
+Disp "1/(1+x) = Σ(-x)^n"
+Disp "e^x = Σ(x^n)/(n!)"
+Lbl 38
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 35
+If A=34
+Goto 39
+If A≠34
+Goto 38
+
+Lbl 39
+ClrHome
+Disp "sin(x) = "
+Disp "Σ((-1)^n x(2n+1))
+Disp "/((2n+1)!)"
+Disp "cos(x) = 
+Disp "Σ((-1)^n x^2n)/((2n)!)"
+Disp "Ok I think that"
+Disp "is it, Good Luck!"
+Lbl 40
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 37
+If A=34
+Goto 99
+If A≠34
+Goto 40
+
 
 Lbl 99
