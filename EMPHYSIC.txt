@@ -79,6 +79,16 @@ If A≠34
 Goto 8
 Lbl 9
 ClrHome
+Disp "RC Circuits:"
+Disp "Charging"
+Disp "Q(t) = Cε(1-e^(-t/RC))
+Disp "V(t) = ε(1-e^(-t/RC))
+Disp "I(t) = (Io)e^(-t/RC)
+Disp "Discharging"
+Disp "Q(t) = C(Vo)e^(-t/RC)
+Disp "V(t) = (Vo)e^(-t/RC)
+Disp "I(t) = (Vo)*e^(-t/RC)/R
+
 Lbl 10
 getKey→A
 If A=21
@@ -91,7 +101,14 @@ If A≠34
 Goto 10
 Lbl 11
 ClrHome:
-Disp "2nd To Exit"
+Disp "RL Circuits:"
+Disp "τ = L/R
+Disp "Charging"
+Disp "I(t) = (ε/r)(1-e^(-t/τ)
+Disp "Vl(t) = εe^(-t/τ)
+Disp "Discharging"
+Disp "I(t) = (Io)e^(-t/τ)
+
 Lbl 12
 getKey→A
 If A=21
@@ -104,16 +121,41 @@ If A≠34
 Goto 12
 Lbl 13
 ClrHome
-Disp "2nd To Exit"
+Disp "LC Circuits"
+Disp "w = (1/√(LC))
+Disp "I(t) = (Qo)*w sin(wt)"
+Disp "Q(t) = (Qo)*cos(wt)"
+Disp "Quick Reminders:"
+Disp "E Field: H to L Potential"
+Disp "B Field: Lines N to S"
 Lbl 14
 getKey→A
 If A=21
 Goto 99
 If A=25
-Goto 9
+Goto 11
+If A=34
+Goto 15
+If A≠34
+Goto 14
+
+Lbl 15
+ClrHome
+Disp "Gauss Law:"
+Disp "E = (Qenc)/(ε*A)
+Disp "Shapes of Charge:
+Disp "E(Line) = λ/(2πεor)
+Disp "E(Sphere) = q/(4πεor^2)"
+Disp "E(Plane) = σ/(2εo)"
+Lbl 16
+getKey→A
+If A=21
+Goto 99
+If A=25
+Goto 13
 If A=34
 Goto 99
 If A≠34
-Goto 14
+Goto 16
 
 Lbl 99
