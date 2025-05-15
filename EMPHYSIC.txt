@@ -147,6 +147,9 @@ Disp "Shapes of Charge:
 Disp "E(Line) = λ/(2πεor)
 Disp "E(Sphere) = q/(4πεor^2)"
 Disp "E(Plane) = σ/(2εo)"
+Disp "E(Loop)(Distx From Center)="
+Disp "(kQx)/((x^2+r^2)^3/2)"
+Disp "E(Line)(Finite
 Lbl 16
 getKey→A
 If A=21
